@@ -1,0 +1,42 @@
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    /* I want add 5 skills in every row */
+    gap: 20px;
+}
+
+.skill-card{
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+    transition: none;
+}
+
+.skill-card h3{
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.skill-card p{
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.additional-caps{
+    margin-top: 3rem;
+    padding: 20px;
+}
+
+.additional-caps h3{
+    color: var(--accent-cyan);
+    margin-bottom: 10px;
+    font-family: var(--font-mono);
+}
+
+.additional-caps ul{
+    list-style-type: none;
+    columns: var(--text-secondary);
+}

@@ -1,0 +1,181 @@
+/* --------------Font Import-------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;700&display=swap");
+
+/* --------------Variables--------------  */
+
+:root {
+  --bg-color: #050505;
+  --surface-color: #11111a;
+  --surface-color-light: #1a1a24;
+  --text-primary: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --accent-cyan: #00f3ff;
+  --accent-purple: #b026ff;
+  --accent-cyan-glow: rgba(0, 243, 255, 0.4);
+  --accent-purple-glow: rgba(176, 38, 255, 0.4);
+
+  --font-main: "Outfit", sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+/* -----------Custom Scrollbar----------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--surface-color-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-main);
+}
+
+/* --------Background grid effect-------- */
+
+.bg-grid {
+  position: fixed;
+  top: -20px;
+  left: -20px;
+  width: calc(100vw + 40px);
+  height: calc(100vh + 40px);
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.bg-gradient {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(176, 38, 255, 0.05),
+    rgba(0, 243, 255, 0.02),
+    transparent 60%
+  );
+  z-index: -2;
+  pointer-events: none;
+}
+
+/* --------------Neon Text-------------- */
+
+.neon-text-cyan {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 10px var(--accent-cyan-glow);
+}
+
+.neon-text-purple {
+  color: var(--accent-purple);
+  text-shadow: 0 0 10px var(--accent-purple-glow);
+}
+
+/* -------------Glass Card------------- */
+
+.glass-card {
+  background: rgba(17, 17, 26, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+}
+
+/* ----------------Main---------------- */
+
+main {
+  position: relative;
+}
+
+.section-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.section-title {
+  font-family: var(--font-mono);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-title::before {
+  content: '';
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan-glow);
+}
+
+/* --------------Footer-------------- */
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* -----------Media query----------- */
+
+@media (max-width: 767px) {
+  main {
+    left: 0;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+    left: 0px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    left: -70px;
+  }
+}
