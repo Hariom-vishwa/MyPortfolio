@@ -178,6 +178,9 @@ nav {
   }
 
   /* Hero section  */
+  .hero-container{
+    left: -70px;
+  }
   .hero-container .hero-status {
     font-size: 1.2rem;
     margin-bottom: 1rem;

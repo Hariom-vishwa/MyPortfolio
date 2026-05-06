@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
   /* border: 1px solid; */
 }
 
@@ -176,6 +177,6 @@ footer {
 
 @media (min-width: 1024px) {
   main {
-    left: -70px;
+    left: 0px;
   }
 }

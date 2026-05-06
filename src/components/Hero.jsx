@@ -66,7 +66,7 @@ const Hero = () => {
     <>
       <div ref={containerRef} className="hero-container section-container">
         <div>
-          <p className="hero-status neon-text-cyan">INITIALIZING_USER_PROFILE...</p>
+          <p className="hero-status neon-text-cyan">FRONTEND WEB DEVELOPER</p>
           <h1 className="hero-title">
             Hariom <br />
             <span className="hero-title-purple">Vishwakarma.</span>
