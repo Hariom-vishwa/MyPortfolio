@@ -1,6 +1,9 @@
 import { Layout, Terminal } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import "../Style/Projects.css";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
@@ -83,6 +86,58 @@ const Projects = () => {
     (p) => filter === "all" || p.category === filter,
   );
 
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        ".projects-title",
+        { opacity: 0, x: -50 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          ScrollTrigger: {
+            trigger: ".projects-title",
+            start: "top 80%",
+            once: true,
+          },
+        },
+      );
+
+      gsap.fromTo(
+        ".projects-filters",
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: ".projects-filters",
+            once: true,
+          },
+        },
+      );
+    },
+    { scope: containerRef },
+  );
+
+  useGSAP(() => {
+    if (!projectsRef.current) return;
+
+    gsap.fromTo(
+      ".project-card",
+      { opacity: 0, scale: 0.9 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 0.4,
+        stagger: 0.05,
+        ease: "power2.out",
+      },
+    );
+  }, [filter]);
+
   return (
     <div id="projects" ref={containerRef} className="section-container">
       <h2 className="section-title projects-title">
@@ -90,10 +145,10 @@ const Projects = () => {
       </h2>
 
       <div className="projects-filters">
-        {['all', 'web', 'python'].map((cat) => (
+        {["all", "web", "python"].map((cat) => (
           <button
             key={cat}
-            className={`hover-target glass-card filter-btn ${filter === cat ? 'active' : ''}`}
+            className={`hover-target glass-card filter-btn ${filter === cat ? "active" : ""}`}
             onClick={() => setFilter(cat)}
           >
             {cat}
