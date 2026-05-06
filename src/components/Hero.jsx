@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { ChevronDown } from "lucide-react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import "./Style/Hero.css";
+import "../Style/Hero.css";
 
 const Hero = () => {
   const containerRef = useRef(null);

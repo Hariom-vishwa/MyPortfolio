@@ -1,6 +1,6 @@
 import { Layout, Terminal } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
-import "./Style/Projects.css";
+import "../Style/Projects.css";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
