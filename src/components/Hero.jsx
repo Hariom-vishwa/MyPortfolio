@@ -4,8 +4,6 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import "./Style/Hero.css";
 
-gsap.registerPlugin(useGSAP);
-
 const Hero = () => {
   const containerRef = useRef(null);
 
