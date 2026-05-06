@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "./Style/skills.css";
+import "./Style/Skills.css";
 import "../index.css";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";

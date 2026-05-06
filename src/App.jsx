@@ -1,5 +1,6 @@
 import "./App.css";
 import Hero from "./components/Hero";
+import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         {/* Components  */}
         <Hero />
         <Skills />
+        <Projects/>
 
         <footer>
           <p>
