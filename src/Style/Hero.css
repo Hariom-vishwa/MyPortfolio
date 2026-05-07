@@ -37,7 +37,6 @@ nav {
 
 .hero-container .hero-status {
   font-family: var(--font-mono);
-
 }
 
 .hero-title {
@@ -71,11 +70,10 @@ nav {
   text-transform: uppercase;
   letter-spacing: 1px;
   border: 1px solid var(--accent-cyan);
-  border-radius: 8px;
+  border-radius: 16px;
   transition: all 0.3s ease;
   background: rgba(17, 17, 26, 0.6);
   backdrop-filter: blur(10px);
-  border-radius: 16px;
 }
 
 .hero-buttons .contact-btn {

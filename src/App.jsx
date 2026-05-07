@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -27,11 +28,11 @@ function App() {
         <Skills />
         <Projects/>
         <Education/>
+        <Contact/>
 
         <footer>
           <p>
-            &copy; {new Date().getFullYear()} Hariom Vishwakarma. All systems
-            operational.
+            &copy; {new Date().getFullYear()} Hariom Vishwakarma.
           </p>
         </footer>
       </main>

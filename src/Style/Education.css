@@ -1,9 +1,9 @@
-.timeline-container{
+.timeline-container {
     position: relative;
     padding-left: 30px;
 }
 
-.timeline-line{
+.timeline-line {
     position: absolute;
     left: 0;
     top: 0;
@@ -13,8 +13,8 @@
     box-shadow: 0 0 10px rgba(0,243,255,0.3);
 }
 
-.timeline-item{
-    position:relative;
+.timeline-item {
+    position: relative;
     margin-bottom: 40px;
     padding: 20px;
     background-color: rgba(17,17,26,0.4);
@@ -24,7 +24,7 @@
     transition: none;
 }
 
-.timeline-dot{
+.timeline-dot {
     position: absolute;
     left: -36px;
     top: 25px;
@@ -37,23 +37,23 @@
     z-index: 1;
 }
 
-.card-cont{
+.card-cont {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.card-cont span{
+.card-cont span {
     font-family: var(--font-mono);
     color: var(--accent-cyan);
     font-size: 0.9rem;
 }
 
-.card-cont h3{
+.card-cont h3 {
     font-size: 1.3rem;
     color: var(--text-primary);
 }
 
-.card-cont p{
+.card-cont p {
     color: var(--text-secondary);
 }
