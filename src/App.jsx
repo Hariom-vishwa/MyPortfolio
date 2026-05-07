@@ -3,6 +3,7 @@ import "./index.css"
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import Education from "./components/Education";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Hero />
         <Skills />
         <Projects/>
+        <Education/>
 
         <footer>
           <p>

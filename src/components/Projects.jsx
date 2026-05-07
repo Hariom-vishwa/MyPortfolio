@@ -90,7 +90,7 @@ const Projects = () => {
     () => {
       gsap.fromTo(
         ".projects-title",
-        { opacity: 0, x: -50 },
+        { opacity: 0, x: 50 },
         {
           opacity: 1,
           x: 0,
