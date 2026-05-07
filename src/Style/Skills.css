@@ -36,5 +36,5 @@
 
 .additional-caps ul {
   list-style-type: none;
-  columns: var(--text-secondary);
+  columns: 2;
 }
