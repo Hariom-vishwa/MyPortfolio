@@ -109,7 +109,7 @@ const Education = () => {
       <div className="timeline-container">
         <div className="timeline-line"></div>
         {educationData.map((itme, index) => (
-          <div className="timeline-item hover-target">
+          <div className="timeline-item">
             <div className="timeline-dot"></div>
             <div className="card-cont">
               <span>{itme.year}</span>

@@ -148,7 +148,7 @@ const Projects = () => {
         {["all", "web", "python"].map((cat) => (
           <button
             key={cat}
-            className={`hover-target glass-card filter-btn ${filter === cat ? "active" : ""}`}
+            className={` glass-card filter-btn ${filter === cat ? "active" : ""}`}
             onClick={() => setFilter(cat)}
           >
             {cat}
@@ -160,7 +160,7 @@ const Projects = () => {
         {filteredProjects.map((project, index) => (
           <div
             key={project.title}
-            className="project-card hover-target"
+            className="project-card "
             data-category={project.category}
           >
             <div className="project-card-inner">
