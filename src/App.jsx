@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useEffect, useRef, useState } from "react";
 import Loader from "./components/Loader";
+import { MenuSquare } from "lucide-react";
 
 gsap.registerPlugin(useGSAP);
 
